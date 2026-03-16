@@ -29,8 +29,8 @@ aerocode/
 ## Pré-requisitos
 
 - Node.js versão 18 ou superior instalado
-- Windows 10/11, Linux Ubuntu 24.04 ou derivado (conforme exigido no trabalho)
-- Conexão com internet (apenas na instalação)
+- Windows 10/11, Linux Ubuntu 24.04 ou derivado 
+- Conexão com internet 
 
 ## Instalação passo a passo (faça exatamente nesta ordem)
 
