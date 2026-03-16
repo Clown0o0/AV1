@@ -43,7 +43,7 @@ npm init -y
 npm install readline-sync
 npm install --save-dev typescript @types/node @types/readline-sync
 
-Crie o arquivo tsconfig.json na raiz da pasta e cole o conteúdo abaixo:
+Verifique se seu arquivo tsconfig.json está igual ao ocumento abaixo:
 {
   "compilerOptions": {
     "target": "ES2020",
