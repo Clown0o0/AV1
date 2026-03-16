@@ -1,8 +1,5 @@
 # Aerocode - Sistema de Gestão de Produção de Aeronaves (CLI)
 
-Sistema desenvolvido em TypeScript para simular o processo completo de produção de aeronaves, desde o cadastro até a entrega final.  
-Atende 100% aos requisitos da Atividade de Avaliação Individual 1 - Professor Eng. Dr. Gerson Penha.
-
 ## Funcionalidades implementadas
 - Cadastro de aeronaves (código único, modelo, tipo, capacidade e alcance)
 - Gerenciamento de peças (nacional/importada + status)
