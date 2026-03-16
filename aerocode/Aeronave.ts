@@ -26,7 +26,7 @@ export class Aeronave {
     exibirDetalhes(): void {
         console.log(`\nAERONAVE ${this.codigo}`);
         console.log(`Modelo: ${this.modelo} | Tipo: ${this.tipo} | Capacidade: ${this.capacidade} pax | Alcance: ${this.alcance} km`);
-        console.log(`Peças cadastradas: ${this.pecas.length}`);
+        console.log(`Pecas cadastradas: ${this.pecas.length}`);
     }
 
     

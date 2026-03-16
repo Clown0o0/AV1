@@ -8,9 +8,9 @@ import { Relatorio } from "./Relatorio";
 import { TipoAeronave, TipoPeca, StatusEtapa, NivelPermissao, TipoTeste, ResultadoTeste } from "./enums";
 
 
-const usuarioLogado = new Funcionario("F001", "Ozires Silva", "11999999999", "São José dos Campos", "admin", "123", NivelPermissao.ADMINISTRADOR);
+const usuarioLogado = new Funcionario("F001", "Isabelo Submarino", "11999999999", "Sao Jose dos Campos", "admin", "123", NivelPermissao.ADMINISTRADOR);
 
-let aeronaveAtual = new Aeronave("EMB-110-001", "Bandeirante", TipoAeronave.COMERCIAL, 8, 1800);
+let aeronaveAtual = new Aeronave("EMB-110-001", "Blubluavioes", TipoAeronave.COMERCIAL, 8, 1800);
 
 
 aeronaveAtual.pecas.push(new Peca("Asa esquerda", TipoPeca.NACIONAL, "Embraer"));
@@ -18,17 +18,17 @@ aeronaveAtual.etapas.push(new Etapa("Montagem fuselagem", "18/03/2026"));
 aeronaveAtual.etapas.push(new Etapa("Instalação sistemas", "22/03/2026"));
 aeronaveAtual.testes.push(new Teste(TipoTeste.HIDRAULICO, ResultadoTeste.APROVADO));
 
-console.log("Aerocode v1.0 - Sistema CLI de Gestão de Produção");
+console.log("Aerocode v1.0 - Sistema CLI de Gestao de Producao");
 console.log("=================================================");
 
 let rodando = true;
 while (rodando) {
     console.log("\n1 - Cadastrar aeronave");
-    console.log("2 - Adicionar peça");
-    console.log("3 - Avançar etapa");
-    console.log("4 - Associar funcionário");
+    console.log("2 - Adicionar peca");
+    console.log("3 - Avancar etapa");
+    console.log("4 - Associar funcionario");
     console.log("5 - Registrar teste");
-    console.log("6 - Gerar relatório final");
+    console.log("6 - Gerar relatorio final");
     console.log("7 - Salvar todos os dados");
     console.log("8 - Sair");
 
@@ -52,14 +52,14 @@ while (rodando) {
             const peca = new Peca(nomePeca, TipoPeca.NACIONAL, fornecedor);
             aeronaveAtual.pecas.push(peca);
             peca.salvar();
-            console.log("Peça adicionada e salva.");
+            console.log("Peca adicionada e salva.");
             break;
 
         case "3":
-            const nomeEtapa = readlineSync.question("Nome da próxima etapa: ");
+            const nomeEtapa = readlineSync.question("Nome da proxima etapa: ");
             const etapa = new Etapa(nomeEtapa, "25/03/2026");
             if (aeronaveAtual.etapas.length > 0 && aeronaveAtual.etapas[aeronaveAtual.etapas.length - 1].status !== StatusEtapa.CONCLUIDA) {
-                console.log("Etapa anterior ainda não foi concluída.");
+                console.log("Etapa anterior ainda nao foi concluida.");
             } else {
                 etapa.iniciar();
                 etapa.finalizar();
@@ -68,11 +68,11 @@ while (rodando) {
             break;
 
         case "4":
-            const func = new Funcionario("F002", "Maria Santos", "11977776666", "SP", "maria", "abc", NivelPermissao.ENGENHEIRO);
+            const func = new Funcionario("F002", "iguinho submarino", "11977776666", "SP", "iguinho", "abc", NivelPermissao.ENGENHEIRO);
             if (aeronaveAtual.etapas.length > 0) {
                 aeronaveAtual.etapas[0].associarFuncionario(func);
             }
-            console.log("Funcionário associado à etapa.");
+            console.log("Funcionario associado a etapa.");
             break;
 
         case "5":
@@ -83,12 +83,12 @@ while (rodando) {
             break;
 
         case "6":
-            Relatorio.gerar(aeronaveAtual, "Azul Linhas Aereas", "15/03/2026");
+            Relatorio.gerar(aeronaveAtual, "submarinosaero", "15/03/2026");
             break;
 
         case "7":
             aeronaveAtual.salvar();
-            console.log("Todos os arquivos foram salvos no diretório.");
+            console.log("Todos os arquivos foram salvos no diretorio.");
             break;
 
         case "8":

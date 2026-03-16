@@ -25,7 +25,7 @@ export class Etapa {
             console.log(`Etapa ${this.nome} finalizada com sucesso.`);
             return true;
         }
-        console.log("Não foi possível finalizar - etapa anterior ainda pendente.");
+        console.log("Nao foi possivel finalizar - etapa anterior ainda pendente.");
         return false;
     }
 
