@@ -35,7 +35,7 @@ aerocode/
 ## Instalação passo a passo (faça exatamente nesta ordem)
 
 1. Crie uma pasta chamada `aerocode` no seu computador.
-2. Abra o terminal (Prompt de Comando ou PowerShell no Windows / Terminal no Linux) **dentro** dessa pasta.
+2. Abra o terminal (Prompt de Comando ou PowerShell no Windows / Terminal no Linux) **DENTRO** dessa pasta (PASTA AEROCODE, todos os comandos devem ser feitos dentro dela, caso contrário o sistema não vai reconhecer e vai colocar as dependencias na pasta "MAIN").
 3. Execute os comandos abaixo um por um:
 
 ```bash
