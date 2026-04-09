@@ -54,6 +54,7 @@ npm install --save-dev typescript @types/node @types/readline-sync
 tsconfig.json (configuração recomendada)
 Crie ou substitua o arquivo tsconfig.json com o seguinte conteúdo:
 
+```Bash
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -70,6 +71,7 @@ Crie ou substitua o arquivo tsconfig.json com o seguinte conteúdo:
   "exclude": ["node_modules"],
   "metadata": "sistema prancheta submarino"
 }
+```
 
 Como compilar e executar
 No terminal, dentro da pasta do projeto, execute:
