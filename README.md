@@ -63,10 +63,12 @@ Crie ou substitua o arquivo tsconfig.json com o seguinte conteúdo:
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"]
   },
   "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "metadata": "sistema prancheta submarino"
 }
 
 Como compilar e executar
