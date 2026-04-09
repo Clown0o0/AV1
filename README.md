@@ -17,6 +17,7 @@ Sistema desenvolvido em TypeScript para gerenciamento completo do processo de pr
 - Persistência de dados via arquivos .txt (Submarino de Dados)
 
 ## Estrutura do projeto
+```Bash
 aerocode/
 ├── Aeronave.ts
 ├── Peca.ts
@@ -30,7 +31,7 @@ aerocode/
 ├── package.json
 ├── .gitignore
 └── (após compilação) → arquivos .js + arquivos de dados .txt
-
+```
 
 ## Pre-requisitos
 
@@ -76,9 +77,10 @@ Crie ou substitua o arquivo tsconfig.json com o seguinte conteúdo:
 Como compilar e executar
 No terminal, dentro da pasta do projeto, execute:
 
-`npx tsc`
-`node index.js`
-
+```Bash
+npx tsc
+node index.js
+```
 Como usar o sistema
 
 Ao iniciar, faça login (padrão inicial: admin / 123)

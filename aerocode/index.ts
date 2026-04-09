@@ -116,7 +116,8 @@ const app = () => {
         } 
         else if (op === 8) {
             if (user?.nivelPermissao !== NivelPermissao.ADMINISTRADOR) { console.log("Apenas Admin."); continue; }
-            const id = soNum("ID: ");
+            let id: any;
+            while (true) {id = soNum("ID: ");const lista = Funcionario.carregarDoSubmarino();if (lista.some(u => u.id === id)){console.log("Erro: ID já existe. Tente outro.");} else {break;}}
             const nom = soLetra("Nome: ");
             const tel = soNum("Tel: ");
             const end = obrigatorio("Endereco: ");
